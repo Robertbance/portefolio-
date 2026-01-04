@@ -46,3 +46,21 @@ toggle.addEventListener("click", () => {
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     body.classList.add("dark");
 }
+
+/* ==============================
+MENU MOBILE TOGGLE
+   ============================== */
+const menuToggle = document.getElementById("menu-toggle");
+const sidebar = document.querySelector(".sidebar");
+
+/* Ouvrir / fermer le menu */
+menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+
+/* Fermer le menu après clic sur un lien */
+document.querySelectorAll(".sidebar a").forEach(link => {
+    link.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+    });
+});
