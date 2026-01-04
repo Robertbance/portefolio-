@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Bancé | Portfolio</title>
+    <title>Robert Bancé | Développeur Python & IA</title>
 
-    <!-- Police Google -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icônes Font Awesome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- MENU VERTICAL GAUCHE -->
+<!-- MENU VERTICAL -->
 <nav class="sidebar">
-    <h2 class="logo">Robert Bancé</h2>
+    <h2 class="logo">Robert</h2>
     <ul>
         <li><a href="#hero"><i class="fas fa-home"></i> Accueil</a></li>
         <li><a href="#about"><i class="fas fa-user"></i> À propos</a></li>
@@ -27,20 +27,18 @@
     </ul>
 </nav>
 
-<!-- BOUTON MODE CLAIR / SOMBRE -->
+<!-- BOUTONS -->
 <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
-
-<!-- BOUTON MENU MOBILE -->
-<button id="menu-toggle" aria-label="Ouvrir le menu">
+<button id="menu-toggle" aria-label="Menu mobile">
     <i class="fas fa-bars"></i>
 </button>
 
 <!-- HERO -->
 <header id="hero" class="hero">
     <div class="overlay"></div>
-    <div class="hero-content fade-in">
+    <div class="hero-content">
         <h1>Robert Bancé</h1>
-        <p>Développeur Python · Data Science · IA · Full-Stack</p>
+        <p>Développeur Python · Data Science · Intelligence Artificielle</p>
     </div>
 </header>
 
@@ -48,11 +46,10 @@
 <section id="about" class="section">
     <h2>À propos</h2>
     <p class="center-text">
-        Développeur passionné par la <strong>Data Science</strong>, 
-        l’<strong>Intelligence Artificielle</strong> et le développement 
-        <strong>Python</strong> (Flask & Django).  
-        Je construis des projets concrets orientés solutions réelles,
-        avec une approche professionnelle et évolutive.
+        Développeur orienté <strong>Data Science</strong> et <strong>IA</strong>,
+        spécialisé en <strong>Python</strong> (Flask, Django).
+        Je conçois des applications robustes et utiles, avec une logique métier claire
+        et une attention particulière à l’expérience utilisateur.
     </p>
 </section>
 
@@ -68,20 +65,20 @@
 
     <div class="projects-grid">
         <div class="project-card">
-            <h3>Application IA Médicale</h3>
-            <p>Analyse de symptômes et prédiction de maladies par Machine Learning.</p>
+            <h3>IA Médicale</h3>
+            <p>Analyse intelligente de symptômes avec Machine Learning.</p>
             <a href="#">Voir le projet</a>
         </div>
 
         <div class="project-card">
-            <h3>Gestion des employés (Django)</h3>
-            <p>Application web complète avec authentification et CRUD.</p>
+            <h3>Gestion des employés</h3>
+            <p>Application Django avec authentification et gestion CRUD.</p>
             <a href="https://projet-employe.onrender.com" target="_blank">Voir le projet</a>
         </div>
 
         <div class="project-card">
-            <h3>UI/UX – Application Infirmerie</h3>
-            <p>Conception d’interface mobile professionnelle avec Figma.</p>
+            <h3>UI/UX Infirmerie</h3>
+            <p>Prototype mobile professionnel réalisé avec Figma.</p>
             <a href="https://www.figma.com/proto/v4dPspH4Hk3oWbyJLjaUCC/Infirmerie" target="_blank">
                 Voir le projet
             </a>
@@ -93,12 +90,9 @@
 <section id="contact" class="section alt">
     <h2>Contact</h2>
 
-    <!-- Formulaire fonctionnel avec Formspree -->
-    <form
-        class="contact-form"
-        action="https://formspree.io/f/mdakpjle"
-        method="POST"
-    >
+    <form class="contact-form"
+          action="https://formspree.io/f/mdakpjle"
+          method="POST">
         <input type="text" name="name" placeholder="Nom" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="message" placeholder="Message" required></textarea>
@@ -108,9 +102,24 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-    <div class="footer-bottom">
-        © 2026 · Robert Bancé — Tous droits réservés
+    <div class="footer-socials">
+        <a href="https://github.com/TON_GITHUB" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/TON_LINKEDIN" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="tel:+22667123596" aria-label="Téléphone">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/22667123596" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
     </div>
+
+    <p class="footer-text">
+        © 2026 · Robert Bancé — Tous droits réservés
+    </p>
 </footer>
 
 <script src="script.js"></script>
