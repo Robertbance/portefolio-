@@ -1,12 +1,11 @@
-/* COMPÉTENCES */
+/* COMPETENCES */
 const skills = [
     { name: "HTML", level: 80 },
     { name: "CSS", level: 70 },
-    { name: "JavaScript", level: 20 },
-    { name: "Python", level: 65 },
-    { name: "Flask / Django", level: 25 },
-    { name: "Machine Learning", level: 50 },
-    { name: "Figma UI/UX", level: 75 }
+    { name: "JavaScript", level: 60 },
+    { name: "Python", level: 85 },
+    { name: "Flask / Django", level: 75 },
+    { name: "Machine Learning", level: 65 }
 ];
 
 const container = document.getElementById("skills-container");
@@ -42,7 +41,6 @@ if (localStorage.getItem("theme") === "dark") {
 
 toggle.addEventListener("click", () => {
     body.classList.toggle("dark");
-
     const isDark = body.classList.contains("dark");
     toggle.textContent = isDark ? "☀️" : "🌙";
     localStorage.setItem("theme", isDark ? "dark" : "light");
