@@ -8,7 +8,7 @@
 }
 
 body.dark {
-    --bg: #0b1120;
+    --bg: #1e2435;
     --text: #e5e7eb;
     --card: #111827;
 }
@@ -90,7 +90,7 @@ body {
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.65);
+    background: rgba(12, 12, 12, 0.65);
 }
 
 .hero-content {
@@ -105,16 +105,22 @@ body {
     margin-left: 230px;
     padding: 80px 20px;
     max-width: 1000px;
+    border-radius: auto;
+    margin-bottom: 40px;
+
 }
 
 .section.alt {
     background: var(--card);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
 }
 
 h2 {
     text-align: center;
     margin-bottom: 40px;
     color: var(--primary);
+
 }
 
 /* SKILLS */
@@ -156,6 +162,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    border-radius: auto;
 }
 
 .contact-form input,
@@ -163,6 +170,10 @@ h2 {
     padding: 12px;
     border-radius: 6px;
     border: 1px solid #c7d2fe;
+    font-size: 1rem;
+    resize: vertical;
+    
+
 }
 
 /* FOOTER */
