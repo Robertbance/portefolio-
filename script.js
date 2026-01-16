@@ -4,8 +4,8 @@ const skills = [
     { name: "JavaScript", level: 60 },
     { name: "Python", level: 85 },
     { name: "Flask", level: 75 },
-    { name: "Machine Learning", level: 65 }
-    { name: "MySQL", level: 75 }
+    { name: "Machine Learning", level: 65 },
+    { name: "MySQL", level: 75 },
     { name: "NLP-Spacy", level: 80 }
 ];
 
